@@ -24,6 +24,11 @@ func (p *Product) FromJSON(r io.Reader) error {
 	return e.Decode(p)
 }
 
+func (p *Product) ToJSON(w io.Writer) error {
+	e := json.NewEncoder(w)
+	return e.Encode(p)
+}
+
 // Products is a collection of Product
 type Products []*Product
 
@@ -43,9 +48,10 @@ func GetProducts() Products {
 	return productList
 }
 
-func AddProduct(p *Product) {
+func AddProduct(p *Product) *Product {
 	p.ID = getNextID()
 	productList = append(productList, p)
+	return p
 }
 
 func UpdateProduct(id int, p*Product) error {

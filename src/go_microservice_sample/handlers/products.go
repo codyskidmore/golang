@@ -91,7 +91,13 @@ func (p *Products) addProduct(rw http.ResponseWriter, r *http.Request) {
 		http.Error(rw, "Unable to unmarshal json", http.StatusBadRequest)
 	}
 
-	data.AddProduct(prod)
+	prod = data.AddProduct(prod)
+	p.l.Printf("Prod: %#v", prod)
+
+	err = prod.ToJSON(rw)
+	if err != nil {
+		http.Error(rw, "Unable to marshal json", http.StatusInternalServerError)
+	}
 }
 
 func (p Products) updateProducts(id int, rw http.ResponseWriter, r*http.Request) {
