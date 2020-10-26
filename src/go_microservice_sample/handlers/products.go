@@ -18,7 +18,7 @@ func NewProducts(l *log.Logger) *Products {
 	return &Products{l}
 }
 
-// ServeHTTP is the main entry point for the handler and staisfies the http.Handler
+// ServeHTTP is the main entry point for the handler and satisfies the http.Handler
 // interface
 func (p *Products) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// handle the request for a list of products
@@ -84,17 +84,18 @@ func (p *Products) getProducts(w http.ResponseWriter, r *http.Request) {
 func (p *Products) addProduct(rw http.ResponseWriter, r *http.Request) {
 	p.l.Println("Handle POST Product")
 
-	prod := &data.Product{}
+	newProduct := &data.Product{}
 
-	err := prod.FromJSON(r.Body)
+	err := newProduct.FromJSON(r.Body)
 	if err != nil {
 		http.Error(rw, "Unable to unmarshal json", http.StatusBadRequest)
 	}
 
-	prod = data.AddProduct(prod)
-	p.l.Printf("Prod: %#v", prod)
+	newProduct = data.AddProduct(newProduct)
 
-	err = prod.ToJSON(rw)
+	p.l.Printf("Prod: %#v", newProduct)
+
+	err = newProduct.ToJSON(rw)
 	if err != nil {
 		http.Error(rw, "Unable to marshal json", http.StatusInternalServerError)
 	}

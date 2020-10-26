@@ -23,6 +23,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/products.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/products.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/products.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/.idea/go_migroservice_sample.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/handlers/goodbye.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/handlers/hello.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/handlers/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/main.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +70,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -117,66 +126,49 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="652" height="466" key="DebuggerActiveHint" timestamp="1603395780525">
+    <state width="671" height="466" key="DebuggerActiveHint" timestamp="1603402537504">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="652" height="466" key="DebuggerActiveHint/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603395780525" />
-    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1603395564647">
+    <state width="671" height="466" key="DebuggerActiveHint/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402537504" />
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1603402411068">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603395564647" />
-    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1603395564647">
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402411068" />
+    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1603402411067">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.center/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603395564647" />
-    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1603395564647">
+    <state width="1877" height="363" key="GridCell.Tab.0.center/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402411067" />
+    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1603402411067">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.left/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603395564647" />
-    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1603395564647">
+    <state width="1877" height="363" key="GridCell.Tab.0.left/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402411067" />
+    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1603402411067">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.0.right/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603395564647" />
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1603395592699">
+    <state width="1877" height="363" key="GridCell.Tab.0.right/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402411067" />
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1603402447286">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.bottom/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603395592699" />
-    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1603395592699">
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402447286" />
+    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1603402447286">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.center/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603395592699" />
-    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1603395592699">
+    <state width="1877" height="363" key="GridCell.Tab.1.center/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402447286" />
+    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1603402447285">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.left/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603395592699" />
-    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1603395592699">
+    <state width="1877" height="363" key="GridCell.Tab.1.left/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402447285" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1603402447286">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="363" key="GridCell.Tab.1.right/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603395592699" />
-    <state width="968" height="548" key="XDebugger.FullValuePopup" timestamp="1603395768904">
+    <state width="1877" height="363" key="GridCell.Tab.1.right/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402447286" />
+    <state x="-1459" y="185" key="SettingsEditor" timestamp="1603538501721">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1459" y="185" key="SettingsEditor/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@-1920.0.1920.1080" timestamp="1603538501721" />
+    <state width="968" height="548" key="XDebugger.FullValuePopup" timestamp="1603402537501">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="968" height="548" key="XDebugger.FullValuePopup/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603395768904" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/data/products.go</url>
-          <line>28</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/handlers/products.go</url>
-          <line>97</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/handlers/products.go</url>
-          <line>78</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="968" height="548" key="XDebugger.FullValuePopup/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402537501" />
   </component>
 </project>
