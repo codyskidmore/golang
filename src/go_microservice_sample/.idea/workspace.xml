@@ -21,16 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="47d1e7ad-2af4-4439-8dd6-98d6bfaf0c6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/products.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/products.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/products.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/products.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/.idea/go_migroservice_sample.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/handlers/goodbye.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/handlers/hello.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/handlers/root.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../go_migroservice_sample/main.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +60,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -162,9 +152,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="363" key="GridCell.Tab.1.right/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1603402447286" />
-    <state x="-1459" y="185" key="SettingsEditor" timestamp="1603538501721">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="461" y="185" key="SettingsEditor" timestamp="1603718655591">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="461" y="185" key="SettingsEditor/-1920.0.1920.1080/0.0.1920.1080/1920.15.1920.1080@0.0.1920.1080" timestamp="1603718655591" />
     <state x="-1459" y="185" key="SettingsEditor/-1920.0.1920.1080/1920.15.1920.1080/0.0.1920.1080@-1920.0.1920.1080" timestamp="1603538501721" />
     <state width="968" height="548" key="XDebugger.FullValuePopup" timestamp="1603402537501">
       <screen x="0" y="0" width="1920" height="1080" />
