@@ -4,21 +4,41 @@ import (
 	"crypto/rand"
 	"encoding/json"
 	"fmt"
+	"github.com/go-playground/validator"
 	"io"
 	"time"
+	"regexp"
 )
 
 // Product defines the structure for an API product
 type Product struct {
 	ID          int     `json:"id"`
 	UUID        string  `json:"uuid"`
-	Name        string  `json:"name"`
+	Name        string  `json:"name" validate:"required"`
 	Description string  `json:"description"`
-	Price       float32 `json:"price"`
-	SKU         string  `json:"sku"`
+	Price       float32 `json:"price" validate:"gt=0"`
+	SKU         string  `json:"sku" validate:"required,sku"`
 	CreatedOn   string  `json:"-"`
 	UpdatedOn   string  `json:"-"`
 	DeletedOn   string  `json:"-"`
+}
+
+func validateSKU(fl validator.FieldLevel) bool {
+	// SKU must be in the format abc-abc-abc
+	re := regexp.MustCompile(`[a-z]+-[a-z]+-[a-z]+`)
+	sku := re.FindAllString(fl.Field().String(), -1)
+
+	if len(sku) == 1 {
+		return true
+	}
+
+	return false
+}
+
+func (p *Product) Validate() error {
+	validate := validator.New()
+	validate.RegisterValidation("sku", validateSKU)
+	return validate.Struct(p)
 }
 
 func (p *Product) FromJSON(r io.Reader) error {
@@ -49,14 +69,6 @@ func (p *Products) ToJSON(w io.Writer) error {
 func GetProducts() Products {
 	return productList
 }
-/*
-func AddProduct(p *Product) *Product {
-	p.ID = getNextID()
-	p.UUID = newUUID()
-	productList = append(productList, p)
-	return p
-}
-*/
 
 func AddProduct(p *Product) {
 	p.ID = getNextID()
