@@ -37,7 +37,7 @@ func main() {
 	postRouter.HandleFunc("/", ph.AddProduct)
 	postRouter.Use(ph.MiddlewareValidateProduct)
 
-	//sm.Handle("/products", ph).Methods("GET")
+	//sm.Handle("/products ", ph).Methods("GET")
 
 	// create a new server
 	s := http.Server{
