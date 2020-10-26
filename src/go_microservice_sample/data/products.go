@@ -49,12 +49,19 @@ func (p *Products) ToJSON(w io.Writer) error {
 func GetProducts() Products {
 	return productList
 }
-
+/*
 func AddProduct(p *Product) *Product {
 	p.ID = getNextID()
 	p.UUID = newUUID()
 	productList = append(productList, p)
 	return p
+}
+*/
+
+func AddProduct(p *Product) {
+	p.ID = getNextID()
+	p.UUID = newUUID()
+	productList = append(productList, p)
 }
 
 func UpdateProduct(id int, p*Product) error {

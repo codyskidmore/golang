@@ -36,20 +36,13 @@ func (p *Products) GetProducts(w http.ResponseWriter, r *http.Request) {
 func (p *Products) AddProduct(rw http.ResponseWriter, r *http.Request) {
 	p.l.Println("Handle POST Product")
 
-	newProduct := &data.Product{}
+	newProduct := r.Context().Value(KeyProduct{}).(data.Product)
 
-	err := newProduct.FromJSON(r.Body)
+	data.AddProduct(&newProduct)
+
+	err := newProduct.ToJSON(rw)
 	if err != nil {
-		http.Error(rw, "Unable to unmarshal json", http.StatusBadRequest)
-	}
-
-	newProduct = data.AddProduct(newProduct)
-
-	p.l.Printf("Prod: %#v", newProduct)
-
-	err = newProduct.ToJSON(rw)
-	if err != nil {
-		http.Error(rw, "Unable to marshal json", http.StatusInternalServerError)
+		http.Error(rw, "Unable to write new product to response", http.StatusInternalServerError)
 	}
 }
 
